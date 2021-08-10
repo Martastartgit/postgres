@@ -1,0 +1,9 @@
+module.exports = {
+    PORT: 5000,
+    saltRounds: 10,
+    JWT_ACCESS_SECRET: process.env.JWT_ACCESS_SECRET || 'ACCESS SECRET',
+    JWT_REFRESH_SECRET: process.env.JWT_REFRESH_SECRET || 'REFRESH SECRET',
+
+    ACCESS_TOKEN_LIFETIME: process.env.ACCESS_TOKEN_LIFETIME || '20m',
+    REFRESH_TOKEN_LIFETIME: process.env.REFRESH_TOKEN_LIFETIME || '30d',
+};
